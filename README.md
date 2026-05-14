@@ -104,7 +104,7 @@ Any push to the main branch auto-deploys to the live site.
 
 **Visagam Building Materials**
 Ramanathapuram District, Tamil Nadu, India
-Established: 1998 | MSME Registered | GeM Certified
+
 
 ---
 
