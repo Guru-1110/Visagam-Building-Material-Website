@@ -1,6 +1,6 @@
 # Visagam Building Materials — Business Website
 
-Official website for **Visagam Building Materials**, a trusted construction materials supplier and heavy machinery rental service based in Ramanathapuram District, Tamil Nadu. Established in 1998, MSME registered and Government e-Marketplace (GeM) certified.
+Official website for **Visagam Building Materials**, a trusted construction materials supplier and heavy machinery rental service based in Ramanathapuram District, Tamil Nadu. Established in 2018, MSME registered and Government e-Marketplace (GeM) certified.
 
 **Live Site → [visagambuildingmaterials.netlify.app](https://visagambuildingmaterials.netlify.app)**
 
@@ -8,7 +8,7 @@ Official website for **Visagam Building Materials**, a trusted construction mate
 
 ## About the Business
 
-Visagam Building Materials has been serving the construction industry for over 25 years. They supply premium quality building materials and provide heavy machinery rental services with skilled operators across Ramanathapuram District.
+Visagam Building Materials has been serving the construction industry for over 8 years. They supply premium quality building materials and provide heavy machinery rental services with skilled operators across Ramanathapuram District.
 
 ---
 
@@ -17,7 +17,7 @@ Visagam Building Materials has been serving the construction industry for over 2
 - **Hero** — Brand introduction with direct WhatsApp contact button
 - **Products** — Full range of construction materials with details
 - **Services** — Heavy machinery rental with operator support
-- **Why Choose Us** — MSME registration, GeM certification, 25+ years experience
+- **Why Choose Us** — MSME registration, GeM certification, 8+ years experience
 - **Testimonials** — Customer reviews and feedback
 - **Contact** — Inquiry form and business location
 
