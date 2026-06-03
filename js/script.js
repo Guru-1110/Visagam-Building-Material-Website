@@ -290,3 +290,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+/*
+* Service Worker registration (PWA: offline support + faster repeat loads)
+*/
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch((err) => {
+            console.warn('Service worker registration failed:', err);
+        });
+    });
+}

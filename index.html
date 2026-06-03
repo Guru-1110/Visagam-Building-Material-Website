@@ -32,6 +32,13 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- PWA -->
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+    <!-- Preload the hero image for a faster LCP -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2400&auto=format&fit=crop" fetchpriority="high">
+
     <!-- Structured Data (JSON-LD) for LocalBusiness -->
     <script type="application/ld+json">
     {
@@ -39,8 +46,8 @@
       "@type": "HomeAndConstructionBusiness",
       "name": "Visagam Building Material",
       "image": "https://images.unsplash.com/photo-1541888081699-db0101c40215?q=80&w=1200",
-      "@id": "",
-      "url": "https://www.visagam-building.com",
+      "@id": "https://visagambuildingmaterials.netlify.app/",
+      "url": "https://visagambuildingmaterials.netlify.app/",
       "telephone": ["+919751401651", "+918300188681"],
       "email": "visagambuildingmaterial@gmail.com",
       "priceRange": "$$",
@@ -276,7 +283,7 @@
                     <div class="product-card">
                         <div class="product-img-wrap">
                             <span class="card-badge">Bricks</span>
-                            <img src="assets/red-bricks.jpg" alt="Red construction bricks" loading="lazy">
+                            <img src="assets/red-bricks.jpg" alt="Red construction bricks" loading="lazy" width="1000" height="750" decoding="async">
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">Standard Red Bricks</h3>
@@ -289,7 +296,7 @@
                     <div class="product-card reveal">
                         <div class="product-img-wrap">
                             <span class="card-badge">Cement</span>
-                            <img src="assets/cement.jpg" alt="Dalmia Cement bags" loading="lazy" style="object-fit: contain; background: #fff;">
+                            <img src="assets/cement.jpg" alt="Dalmia Cement bags" loading="lazy" width="359" height="140" decoding="async" style="object-fit: contain; background: #fff;">
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">Portland Cement</h3>
@@ -302,7 +309,7 @@
                     <div class="product-card">
                         <div class="product-img-wrap">
                             <span class="card-badge">Aggregates</span>
-                            <img src="assets/m-sand.jpg" alt="Manufactured construction sand" loading="lazy">
+                            <img src="assets/m-sand.jpg" alt="Manufactured construction sand" loading="lazy" width="1000" height="833" decoding="async">
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">M Sand</h3>
@@ -315,7 +322,7 @@
                     <div class="product-card">
                         <div class="product-img-wrap">
                             <span class="card-badge">Steel</span>
-                            <img src="assets/tmt-user.jpg" alt="Steel rebar rods" loading="lazy">
+                            <img src="assets/tmt-user.jpg" alt="Steel rebar rods" loading="lazy" width="512" height="340" decoding="async">
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">TMT Steel Rebar</h3>
@@ -328,7 +335,7 @@
                     <div class="product-card reveal">
                         <div class="product-img-wrap">
                             <span class="card-badge">Blocks</span>
-                            <img src="assets/hollow-blocks.png" alt="Hollow block bricks" loading="lazy">
+                            <img src="assets/hollow-blocks.jpg" alt="Hollow block bricks" loading="lazy" width="1000" height="1000" decoding="async">
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">Hollow Block Bricks</h3>
@@ -341,7 +348,7 @@
                     <div class="product-card reveal">
                         <div class="product-img-wrap">
                             <span class="card-badge">Aggregates</span>
-                            <img src="assets/gravel.jpg" alt="Gravel Construction Stone" loading="lazy">
+                            <img src="assets/gravel.jpg" alt="Gravel Construction Stone" loading="lazy" width="1000" height="750" decoding="async">
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">Gravel Stone</h3>
@@ -418,7 +425,7 @@
                     <div class="product-card">
                         <div class="product-img-wrap">
                             <span class="card-badge badge-rental">Rental</span>
-                            <img src="assets/tractor.jpg" alt="Heavy duty Tractor" loading="lazy" style="object-fit: contain; background: #fff;">
+                            <img src="assets/tractor.jpg" alt="Heavy duty Tractor" loading="lazy" width="450" height="300" decoding="async" style="object-fit: contain; background: #fff;">
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">Heavy Duty Tractors</h3>
@@ -431,7 +438,7 @@
                     <div class="product-card reveal">
                         <div class="product-img-wrap">
                             <span class="card-badge badge-rental">Rental</span>
-                            <img src="assets/jcb.jpg" alt="JCB Earthmover" loading="lazy" style="object-fit: contain; background: #fff;">
+                            <img src="assets/jcb.jpg" alt="JCB Earthmover" loading="lazy" width="1000" height="750" decoding="async" style="object-fit: contain; background: #fff;">
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">JCB Excavators</h3>
@@ -444,7 +451,7 @@
                     <div class="product-card">
                         <div class="product-img-wrap">
                             <span class="card-badge badge-rental">Rental</span>
-                            <img src="assets/bharat-benz.jpg" alt="Bharat Benz Lorry" loading="lazy" style="object-fit: contain; background: #fff;">
+                            <img src="assets/bharat-benz.jpg" alt="Bharat Benz Lorry" loading="lazy" width="1000" height="728" decoding="async" style="object-fit: contain; background: #fff;">
                         </div>
                         <div class="product-info">
                             <h3 class="product-name">Bharat Benz Lorries</h3>
@@ -647,6 +654,22 @@
         </button>
         <a href="https://wa.me/919751401651" target="_blank" rel="noopener" class="fab whatsapp" aria-label="Chat on WhatsApp" data-tooltip="Chat with us">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </a>
+    </div>
+
+    <!-- Mobile sticky action bar (conversion CTA, mobile only) -->
+    <div class="mobile-cta" aria-label="Quick contact actions">
+        <a href="tel:+919751401651" class="mcta-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>Call</span>
+        </a>
+        <a href="https://wa.me/919751401651" target="_blank" rel="noopener" class="mcta-btn mcta-whatsapp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.24.68-1.42 1.31-1.96 1.36-.5.05-1.14.07-1.84-.12-.42-.13-.97-.31-1.66-.61-2.93-1.27-4.84-4.22-4.99-4.42-.15-.2-1.19-1.58-1.19-3.02 0-1.43.75-2.13 1.02-2.42.27-.29.58-.36.78-.36.2 0 .39.002.56.01.18.008.42-.07.66.5.24.58.82 2.01.89 2.16.07.15.12.32.02.51-.1.2-.15.32-.29.49-.15.17-.31.39-.44.52-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.35 1.45.29.15.46.12.63-.07.17-.2.73-.85.92-1.14.2-.29.39-.24.66-.15.27.1 1.7.8 1.99.95.29.15.49.22.56.34.07.12.07.7-.17 1.38z"></path></svg>
+            <span>WhatsApp</span>
+        </a>
+        <a href="#contact" class="mcta-btn mcta-quote">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+            <span>Get Quote</span>
         </a>
     </div>
 

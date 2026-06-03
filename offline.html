@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0F172A">
+    <meta name="robots" content="noindex">
+    <title>You're Offline | Visagam Building Material</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='2' y='24' width='28' height='6' rx='1' fill='%231E3A8A'/><rect x='4' y='16' width='10' height='6' rx='1' fill='%231E3A8A'/><rect x='18' y='16' width='10' height='6' rx='1' fill='%231E3A8A'/><rect x='11' y='8' width='10' height='6' rx='1' fill='%23F59E0B'/><path d='M16 2L3 8V6L16 0L29 6V8L16 2Z' fill='%231E3A8A'/></svg>">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background: var(--gradient-dark);
+            color: #fff;
+        }
+        .error-page svg { color: var(--accent); margin-bottom: 1.5rem; }
+        .error-page h1 { color: #fff; font-size: 1.75rem; margin-bottom: 0.5rem; }
+        .error-page p { color: #cbd5e1; max-width: 460px; margin-bottom: 2rem; }
+    </style>
+</head>
+<body>
+    <main class="error-page">
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l22 22"></path><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path><path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+        <h1>You're Offline</h1>
+        <p>It looks like you've lost your internet connection. Check your network and try again — your saved pages are still available.</p>
+        <a href="/" class="btn btn-primary">Retry</a>
+    </main>
+</body>
+</html>
