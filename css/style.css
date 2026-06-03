@@ -1249,43 +1249,6 @@ ul {
     filter: grayscale(0.2);
 }
 
-/* Mobile sticky CTA bar (shown only on small screens) */
-.mobile-cta {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 998;
-    background-color: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(8px);
-    border-top: 1px solid var(--border);
-    box-shadow: 0 -4px 12px rgba(15, 23, 42, 0.08);
-    padding: 0.5rem;
-    gap: 0.5rem;
-}
-
-.mcta-btn {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.2rem;
-    padding: 0.5rem 0.25rem;
-    border-radius: var(--radius-sm);
-    font-size: 0.72rem;
-    font-weight: 600;
-    color: var(--primary);
-}
-
-.mcta-whatsapp { color: #25D366; }
-
-.mcta-quote {
-    background-image: var(--gradient-accent);
-    color: #fff;
-}
-
 /* Responsive Design */
 @media screen and (max-width: 992px) {
     .about-container {
@@ -1380,18 +1343,5 @@ ul {
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
-    }
-
-    /* Sticky CTA takes over on mobile; hide floating FABs to avoid overlap */
-    .mobile-cta {
-        display: flex;
-    }
-
-    .floating-actions {
-        display: none;
-    }
-
-    body {
-        padding-bottom: 70px;
     }
 }
