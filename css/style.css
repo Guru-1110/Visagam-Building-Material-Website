@@ -702,6 +702,11 @@ ul {
 
 .contact-box p {
     color: var(--text-light);
+    word-break: break-word;
+}
+
+.contact-box p a:hover {
+    color: var(--accent);
 }
 
 .contact-form {
