@@ -245,4 +245,48 @@ document.addEventListener('DOMContentLoaded', () => {
         counterObserver.observe(counter);
     });
 
+    /*
+    * FAQ Accordion
+    */
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+
+        question.addEventListener('click', () => {
+            const isOpen = item.classList.contains('open');
+
+            // Close all items (single-open accordion)
+            faqItems.forEach(other => {
+                other.classList.remove('open');
+                other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                other.querySelector('.faq-answer').style.maxHeight = null;
+            });
+
+            // Open the clicked item if it was closed
+            if (!isOpen) {
+                item.classList.add('open');
+                question.setAttribute('aria-expanded', 'true');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        });
+    });
+
+    /*
+    * Scroll Progress Bar
+    */
+    const scrollProgress = document.getElementById('scrollProgress');
+
+    if (scrollProgress) {
+        const updateProgress = () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            scrollProgress.style.width = progress + '%';
+        };
+        window.addEventListener('scroll', updateProgress, { passive: true });
+        updateProgress();
+    }
+
 });

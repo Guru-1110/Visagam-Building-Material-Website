@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0F172A">
+    <link rel="canonical" href="https://visagambuildingmaterials.netlify.app/">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='2' y='24' width='28' height='6' rx='1' fill='%231E3A8A'/><rect x='4' y='16' width='10' height='6' rx='1' fill='%231E3A8A'/><rect x='18' y='16' width='10' height='6' rx='1' fill='%231E3A8A'/><rect x='11' y='8' width='10' height='6' rx='1' fill='%231E3A8A'/><path d='M16 2L3 8V6L16 0L29 6V8L16 2Z' fill='%23F59E0B'/></svg>">
-    <title>Visagam Building Material | Premium Supplies</title>
-    <meta name="description" content="Visagam Building Material is your trusted partner for high-quality construction and building materials. We provide premium bricks, cement, lumber, and more with reliable delivery.">
-    
+    <title>Visagam Building Material | Premium Construction Supplies & Machinery Rental</title>
+    <meta name="description" content="Visagam Building Material is your trusted partner for high-quality construction and building materials in Ramanathapuram. Cement, TMT steel, bricks, M-sand, gravel and heavy machinery rental with reliable delivery.">
+    <meta name="keywords" content="building materials Ramanathapuram, cement supplier Sayalkudi, TMT steel bars, M sand, hollow blocks, JCB rental, tractor rental, Visagam Building Material">
+    <meta name="robots" content="index, follow">
+
     <!-- Open Graph for Social Media SEO -->
     <meta property="og:title" content="Visagam Building Material | Premium Supplies">
     <meta property="og:description" content="Trusted partner for high-quality construction materials, including bricks, cement, sand, and lumber.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://visagambuildingmaterials.netlify.app/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Visagam Building Material | Premium Supplies">
+    <meta name="twitter:description" content="Trusted partner for high-quality construction materials and heavy machinery rental in Ramanathapuram.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,8 +53,54 @@
       "description": "Premium supplier of building and construction materials including cement, bricks, sand, and heavy machinery rentals."
     }
     </script>
+
+    <!-- Structured Data (JSON-LD) for FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which areas do you deliver building materials to?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We deliver across Ramanathapuram District and surrounding areas, with doorstep delivery to your construction site."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you supply materials in bulk for large projects?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We specialise in bulk supply with competitive project-scale pricing and a credit facility for regular buyers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is an operator included with machinery rentals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our JCBs, tractors and lorries are rented with skilled, experienced operators on daily, weekly, or custom project-based plans."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get a price quote?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send us your requirements through the contact form or WhatsApp and our team will share availability and pricing, usually within business hours the same day."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <!-- Scroll progress indicator -->
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
     <!-- Header & Navigation -->
     <header class="header" id="header">
@@ -77,7 +135,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         <!-- Hero Section -->
         <section class="hero" id="home">
             <div class="hero-bg">
@@ -97,16 +155,16 @@
                 
                 <div class="stats">
                     <div class="stat-item">
-                        <span class="stat-number" data-target="10000">0</span><span class="stat-plus">+</span>
-                        <span class="stat-label">Projects Completed</span>
+                        <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Projects Supplied</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number" data-target="5000">0</span><span class="stat-plus">+</span>
+                        <span class="stat-number" data-target="300">0</span><span class="stat-plus">+</span>
                         <span class="stat-label">Happy Builders</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
-                        <span class="stat-label">Products</span>
+                        <span class="stat-number" data-target="50">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Products & Materials</span>
                     </div>
                 </div>
                 
@@ -216,6 +274,7 @@
                     <!-- Product 1 -->
                     <div class="product-card">
                         <div class="product-img-wrap">
+                            <span class="card-badge">Bricks</span>
                             <img src="assets/red-bricks.jpg" alt="Red construction bricks" loading="lazy">
                         </div>
                         <div class="product-info">
@@ -228,6 +287,7 @@
                     <!-- Product 2 -->
                     <div class="product-card reveal">
                         <div class="product-img-wrap">
+                            <span class="card-badge">Cement</span>
                             <img src="assets/cement.jpg" alt="Dalmia Cement bags" loading="lazy" style="object-fit: contain; background: #fff;">
                         </div>
                         <div class="product-info">
@@ -240,6 +300,7 @@
                     <!-- Product 3 -->
                     <div class="product-card">
                         <div class="product-img-wrap">
+                            <span class="card-badge">Aggregates</span>
                             <img src="assets/m-sand.jpg" alt="Manufactured construction sand" loading="lazy">
                         </div>
                         <div class="product-info">
@@ -252,6 +313,7 @@
                     <!-- Product 4 -->
                     <div class="product-card">
                         <div class="product-img-wrap">
+                            <span class="card-badge">Steel</span>
                             <img src="assets/tmt-user.jpg" alt="Steel rebar rods" loading="lazy">
                         </div>
                         <div class="product-info">
@@ -264,6 +326,7 @@
                     <!-- Product 5 -->
                     <div class="product-card reveal">
                         <div class="product-img-wrap">
+                            <span class="card-badge">Blocks</span>
                             <img src="assets/hollow-blocks.png" alt="Hollow block bricks" loading="lazy">
                         </div>
                         <div class="product-info">
@@ -276,6 +339,7 @@
                     <!-- Product 6 -->
                     <div class="product-card reveal">
                         <div class="product-img-wrap">
+                            <span class="card-badge">Aggregates</span>
                             <img src="assets/gravel.jpg" alt="Gravel Construction Stone" loading="lazy">
                         </div>
                         <div class="product-info">
@@ -288,6 +352,52 @@
                 
                 <div class="text-center" style="margin-top: 3rem;">
                     <a href="#contact" class="btn btn-outline">View Full Catalog</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- How We Work / Process Section -->
+        <section class="section process reveal" id="process">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Simple &amp; Transparent</span>
+                    <h2 class="section-title">How We Work</h2>
+                    <p class="section-desc mx-auto" style="max-width: 700px;">From your first call to material at your site — a hassle-free process built around your construction timeline.</p>
+                </div>
+
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                        <span class="process-num">01</span>
+                        <h3>Share Requirements</h3>
+                        <p>Tell us what you need via WhatsApp, phone, or the inquiry form — materials, quantity, and site location.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+                        </div>
+                        <span class="process-num">02</span>
+                        <h3>Get a Quote</h3>
+                        <p>Receive transparent, competitive pricing — usually the same day during business hours, with no hidden costs.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                        </div>
+                        <span class="process-num">03</span>
+                        <h3>Doorstep Delivery</h3>
+                        <p>We deliver on time, right to your construction site across Ramanathapuram District — machinery comes with operators.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </div>
+                        <span class="process-num">04</span>
+                        <h3>Ongoing Support</h3>
+                        <p>Dedicated support for project-scale needs, plus a credit facility for our regular trade buyers.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -306,6 +416,7 @@
                     <!-- Rental 1 -->
                     <div class="product-card">
                         <div class="product-img-wrap">
+                            <span class="card-badge badge-rental">Rental</span>
                             <img src="assets/tractor.jpg" alt="Heavy duty Tractor" loading="lazy" style="object-fit: contain; background: #fff;">
                         </div>
                         <div class="product-info">
@@ -318,6 +429,7 @@
                     <!-- Rental 2 -->
                     <div class="product-card reveal">
                         <div class="product-img-wrap">
+                            <span class="card-badge badge-rental">Rental</span>
                             <img src="assets/jcb.jpg" alt="JCB Earthmover" loading="lazy" style="object-fit: contain; background: #fff;">
                         </div>
                         <div class="product-info">
@@ -330,6 +442,7 @@
                     <!-- Rental 3 -->
                     <div class="product-card">
                         <div class="product-img-wrap">
+                            <span class="card-badge badge-rental">Rental</span>
                             <img src="assets/bharat-benz.jpg" alt="Bharat Benz Lorry" loading="lazy" style="object-fit: contain; background: #fff;">
                         </div>
                         <div class="product-info">
@@ -383,6 +496,66 @@
                             </div>
                         </div>
                     </div>
+                    <div class="testimonial-card">
+                        <div class="t-stars">★★★★★</div>
+                        <p class="t-text">"Building my home, I needed materials in small batches on short notice. Visagam delivered every time, on schedule, and the credit facility made managing cash flow so much easier."</p>
+                        <div class="t-author">
+                            <div class="t-avatar bg-accent">L</div>
+                            <div>
+                                <h4>Lakshmi Priya</h4>
+                                <span>Home Owner, Sayalkudi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section faq bg-light reveal" id="faq">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Got Questions?</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Which areas do you deliver building materials to?</span>
+                            <svg class="faq-chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We deliver across Ramanathapuram District and surrounding areas, with doorstep delivery straight to your construction site.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Do you supply materials in bulk for large projects?</span>
+                            <svg class="faq-chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes — we specialise in bulk supply with competitive project-scale pricing, plus a credit facility for regular trade buyers.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Is an operator included with machinery rentals?</span>
+                            <svg class="faq-chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes. Our JCBs, tractors, and lorries come with skilled, experienced operators on daily, weekly, or custom project-based rental plans.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>How do I get a price quote?</span>
+                            <svg class="faq-chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Send your requirements through the contact form or WhatsApp and our team will share availability and pricing — usually the same day during business hours.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -434,7 +607,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" required placeholder="(123) 456-7890">
+                                <input type="tel" id="phone" name="phone" required placeholder="+91 98765 43210">
                             </div>
                         </div>
                         <div class="form-group">
@@ -453,6 +626,14 @@
                         <button type="submit" class="btn btn-primary submit-btn">Send Inquiry via WhatsApp</button>
                         <p class="form-note">We'll open WhatsApp with your details ready to send — instant response during business hours.</p>
                     </form>
+                </div>
+
+                <div class="map-wrap reveal">
+                    <iframe
+                        title="Visagam Building Material location map"
+                        src="https://www.google.com/maps?q=Sayalkudi,+Ramanathapuram+District,+Tamil+Nadu&output=embed"
+                        width="100%" height="380" style="border:0;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
