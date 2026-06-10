@@ -1,6 +1,6 @@
 # Visagam Building Materials — Business Website
 
-Official website for **Visagam Building Materials**, a trusted construction materials supplier and heavy machinery rental service based in Ramanathapuram District, Tamil Nadu. Established in 1998, MSME registered and Government e-Marketplace (GeM) certified.
+Official website for **Visagam Building Materials**, a trusted construction materials supplier and heavy machinery rental service based in Ramanathapuram District, Tamil Nadu. Established in 2018, MSME registered and Government e-Marketplace (GeM) certified.
 
 **Live Site → [visagambuildingmaterials.netlify.app](https://visagambuildingmaterials.netlify.app)**
 
@@ -8,7 +8,7 @@ Official website for **Visagam Building Materials**, a trusted construction mate
 
 ## About the Business
 
-Visagam Building Materials has been serving the construction industry for over 25 years. They supply premium quality building materials and provide heavy machinery rental services with skilled operators across Ramanathapuram District.
+Visagam Building Materials has been serving the construction industry for over 8 years. They supply premium quality building materials and provide heavy machinery rental services with skilled operators across Ramanathapuram District.
 
 ---
 
@@ -17,7 +17,7 @@ Visagam Building Materials has been serving the construction industry for over 2
 - **Hero** — Brand introduction with direct WhatsApp contact button
 - **Products** — Full range of construction materials with details
 - **Services** — Heavy machinery rental with operator support
-- **Why Choose Us** — MSME registration, GeM certification, 25+ years experience
+- **Why Choose Us** — MSME registration, GeM certification, 8+ years experience
 - **Testimonials** — Customer reviews and feedback
 - **Contact** — Inquiry form and business location
 
@@ -46,34 +46,46 @@ Visagam Building Materials has been serving the construction industry for over 2
 
 | Layer | Technology |
 |---|---|
-| Markup | HTML5 |
-| Styling | CSS3 (custom, responsive) |
+| Markup | HTML5 (semantic) |
+| Styling | CSS3 (custom properties, responsive) |
 | Interactivity | Vanilla JavaScript |
-| Deployment | Netlify |
-| Contact | WhatsApp Business API |
+| App Shell | PWA — service worker + web manifest |
+| SEO | JSON-LD structured data, Open Graph, sitemap |
+| Deployment | Netlify (with `_headers` security/caching) |
+| Contact | WhatsApp deep links |
 
 ---
 
 ## Project Structure
 
 ```
-├── index.html       # Main page
+├── index.html          # Main page
+├── 404.html            # Branded not-found page
+├── offline.html        # PWA offline fallback
 ├── css/
-│   └── style.css    # All styles, responsive layout
+│   └── style.css       # All styles, responsive layout
 ├── js/
-│   └── script.js    # Interactions, form handling
-└── assets/          # Product and service images
+│   └── script.js       # Interactions, form handling, PWA registration
+├── assets/             # Optimized product/service images + app icons
+├── sw.js               # Service worker (offline + caching)
+├── site.webmanifest    # PWA manifest (installable app)
+├── robots.txt          # Crawler directives
+├── sitemap.xml         # Sitemap for search engines
+└── _headers            # Netlify security & cache headers
 ```
 
 ---
 
 ## Features
 
-- **Fully Responsive** — Works on mobile, tablet, and desktop
-- **WhatsApp Integration** — Direct WhatsApp chat button for instant customer inquiries
-- **Fast Loading** — Pure HTML/CSS/JS, no frameworks, no dependencies
-- **SEO Ready** — Semantic HTML structure
-- **Inquiry Form** — Customers can send product/service inquiries directly
+- **Fully Responsive** — Works on mobile, tablet, and desktop, with a mobile sticky call/WhatsApp/quote bar
+- **WhatsApp Integration** — Inquiry form opens WhatsApp with a pre-filled, formatted message; product buttons pre-fill the form
+- **Installable PWA** — Service worker provides offline support and faster repeat visits; add-to-home-screen ready
+- **Performance** — Images optimized & resized (≈60% smaller), explicit dimensions to prevent layout shift, hero preload for LCP
+- **SEO Ready** — Semantic HTML, canonical URL, Open Graph + Twitter cards, LocalBusiness & FAQ structured data (JSON-LD), sitemap & robots
+- **Accessibility** — Skip link, `:focus-visible` rings, `prefers-reduced-motion` support, ARIA states, keyboard-friendly menu & accordion
+- **Security** — Content-Security-Policy and hardening headers via Netlify `_headers`
+- **Engaging UX** — Scroll-progress bar, reveal-on-scroll animations, animated counters, FAQ accordion, "How We Work" process, location map
 
 ---
 
